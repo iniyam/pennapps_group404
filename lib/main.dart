@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'screens/addScreen.dart';
 import 'screens/homeScreen.dart';
+import 'screens/settings.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/homeScreen',
       routes: {
         '/homeScreen': (context) => HomeScreen(),
-        '/addScreen': (context) => AddScreen()
+        '/addScreen': (context) => AddScreen(),
+        '/settings': (context) => SettingsScreen(),
       },
     );
   }

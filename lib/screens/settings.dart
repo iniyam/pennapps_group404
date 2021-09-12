@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class AddScreen extends StatelessWidget {
+class SettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('add screen'),
+        title: Text('Settings'),
         centerTitle: true,
       ),
       body: Center(
@@ -13,9 +13,12 @@ class AddScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'heres where you can add an item',
-              style: Theme.of(context).textTheme.headline4,
+              'add some settings options',
             ),
+            TextButton.icon(
+                onPressed: () {},
+                icon: Icon(Icons.agriculture_outlined),
+                label: Text('heres another random button'))
           ],
         ),
       ),

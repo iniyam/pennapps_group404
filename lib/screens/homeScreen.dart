@@ -4,18 +4,25 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Home Screen'), centerTitle: true),
+      appBar: AppBar(
+        title: Text('Home Screen'),
+        centerTitle: true,
+        leading:
+            //creates settings button on top left of app bar
+            IconButton(
+          onPressed: () {
+            Navigator.pushNamed(context, '/settings');
+          },
+          icon: Icon(Icons.settings),
+        ),
+      ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'on the home screen',
-            ),
             TextButton.icon(
                 onPressed: () {},
                 icon: Icon(Icons.access_alarms),
-                label: Text('pick a time '))
+                label: Text('here is a button'))
           ],
         ),
       ),
